@@ -1,0 +1,144 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css?family=Lobster|Rubik&display=swap");
+body {
+  background-color: #E9EDEF;
+  margin: 0;
+  color: #263646;
+  font-family: "Rubik", "Arial";
+  font-size: 14px;
+  padding: 60px 0 100px;
+}
+
+.wrap {
+  position: relative;
+  margin: 0 auto;
+  max-width: 1640px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+  z-index: 2;
+  background-color: white;
+}
+header .logo {
+  display: inline-block;
+  padding-left: 50px;
+  padding-right: 10px;
+  font-size: 20px;
+  font-family: "Lobster", "Arial";
+}
+header .logoimg {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  width: 28px;
+}
+header #breadcrumbs {
+  position: relative;
+  top: -1px;
+  list-style: none;
+  display: inline;
+  padding: 0;
+}
+header #breadcrumbs li {
+  display: inline;
+}
+header #breadcrumbs li:before {
+  content: "›";
+  color: #899bb4;
+}
+header #breadcrumbs #sort {
+  display: inline-block;
+  padding: 0 10px;
+  cursor: pointer;
+}
+header #breadcrumbs #sort:hover .dropdown {
+  opacity: 1;
+}
+
+.button {
+  position: relative;
+  display: inline-block;
+  box-sizing: border-box;
+  padding: 0 12px;
+  line-height: 35px;
+  border-radius: 4px;
+  cursor: pointer;
+  text-align: center;
+  transition: all 0.1s;
+  font-size: 14px;
+}
+.button:hover {
+  background-color: #F5FCFF;
+}
+.button::active {
+  -webkit-transform: translateY(1px);
+          transform: translateY(1px);
+}
+
+.dropdown {
+  opacity: 0;
+  position: absolute;
+  top: 32px;
+  border-radius: 0 0 6px 6px;
+  font-size: 14px;
+  -webkit-transform-origin: top;
+          transform-origin: top;
+  border-top: 1px solid #e9f2f9;
+  z-index: 100;
+  background: white;
+}
+
+.container {
+  display: grid;
+  margin-top: 20px;
+  justify-items: center;
+  align-items: center;
+  grid-gap: 3px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.box {
+  box-sizing: bordr-box;
+  margin-bottom: 20px;
+  width: 200px;
+  height: 250px;
+  background: white;
+  border-radius: 10px;
+  border: 2px solid black;
+  text-align: center;
+  overflow: hidden;
+}
+.box img {
+  width: 100%;
+  height: 200px;
+}
+.box span {
+  display: inline-block;
+  width: 50px;
+  height: 10px;
+  font-size: 14px;
+  line-height: 10px;
+  border: 1px solid black;
+  border-radius: 20px;
+  padding: 5px;
+  margin-top: 5px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+.box span:hover {
+  background: black;
+  transition: all 1s;
+}
+.box span:hover a {
+  color: white;
+}
