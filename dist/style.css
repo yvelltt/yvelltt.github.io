@@ -1,40 +1,32 @@
 @import url("https://fonts.googleapis.com/css?family=Lobster|Rubik&display=swap");
 * {
-    font-size: 20px;
+    font-size: 35px;
 }
 
 body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     background: #ececec;
     color: #1c4b82;
+    min-height: 100vh;
     font-family: "Rubik", sans-serifs;
-    font-size: calc(1rem + .325vw);
+    font-size: calc(1rem + 2vw);
     margin: 0;
     padding: 0;
     text-align: center;
 }
-
 a {
     text-decoration: none;
     color: #1c4b82;
     transition: all 0.4s;
 }
 
-.header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    margin-top: 10rem;
-}
-
-svg {
-    margin: auto;
-}
-
 .btn {
     display: inline-block;
-    padding: 5px 10px;
-    border: 1.5px solid #1c4b82;
+    padding: 10px 15px;
+    border: 5px solid #1c4b82;
     border-radius: 30px;
 }
 
@@ -56,12 +48,6 @@ svg {
     animation: fill 3s ease-in-out both;
 }
 
-nav {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 nav ul {
     display: flex;
     list-style: none;
@@ -69,7 +55,7 @@ nav ul {
 }
 
 nav ul svg {
-    width: calc(.8rem + .325vw);
+    width: calc(1.5rem + .325vw);
     fill: #1c4b82;
 }
 
