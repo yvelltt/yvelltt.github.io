@@ -3,7 +3,7 @@ body {
     background: #ececec;
     color: #1c4b82;
     font-family: "Rubik", sans-serifs;
-    font-size: calc(1rem + .325vw);
+    font-size: calc(.8rem + .325vw);
     margin: 0;
     padding: 0;
     text-align: center;
@@ -16,8 +16,11 @@ a {
 }
 
 .header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
-    margin-top: 100px;
+    margin-top: 10rem;
 }
 
 .btn {
@@ -25,7 +28,6 @@ a {
     padding: 5px 10px;
     border: 1.5px solid #1c4b82;
     border-radius: 30px;
-    font-size: 20px;
 }
 
 .btn:hover {
@@ -37,7 +39,6 @@ a {
 }
 
 .text {
-    font-size: 500px;
     stroke-width: 20px;
     stroke: #ececec;
     stroke-width: 20px;
@@ -60,7 +61,7 @@ nav ul {
 }
 
 nav ul svg {
-    width: 1rem;
+    width: calc(.8rem + .325vw);
     fill: #1c4b82;
 }
 
@@ -70,7 +71,6 @@ nav ul li {
 
 nav ul li.icon {
     margin-left: auto;
-    font-size: calc(.5rem + .325vw);
 }
 
 .modal {
@@ -132,7 +132,6 @@ nav ul li.icon {
 
 .intro {
     margin: 5rem 3rem;
-    font-size: 40px;
 }
 
 @keyframes scale {
