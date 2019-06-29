@@ -1,162 +1,156 @@
 @import url("https://fonts.googleapis.com/css?family=Lobster|Rubik&display=swap");
 body {
-  background: #ececec;
-  color: #1c4b82;
-  font-family: "Rubik", sans-serifs;
-  font-size: calc(1rem + .325vw);
-  margin: 0;
-  padding: 0;
-  text-align: center;
+    background: #ececec;
+    color: #1c4b82;
+    font-family: "Rubik", sans-serifs;
+    font-size: calc(1rem + .325vw);
+    margin: 0;
+    padding: 0;
+    text-align: center;
 }
 
 a {
-  text-decoration: none;
-  color: #1c4b82;
-  transition: all 0.4s;
-}
-
-.page {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 200px;
-  height: 200px;
-  margin-top: -100px;
-  margin-left: -100px;
-}
-
-.center {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+    text-decoration: none;
+    color: #1c4b82;
+    transition: all 0.4s;
 }
 
 .header {
-  font-family: "Lobster", cursive;
-  color: #1c4b82;
-  font-size: calc(3rem + 5vw);
+    text-align: center;
+    margin-top: 100px;
 }
 
 .btn {
-  display: inline-block;
-  padding: 5px 10px;
-  border: 1.5px solid #1c4b82;
-  border-radius: 30px;
-  font-size: 20px;
+    display: inline-block;
+    padding: 5px 10px;
+    border: 1.5px solid #1c4b82;
+    border-radius: 30px;
+    font-size: 20px;
 }
+
 .btn:hover {
-  background: #1c4b82;
+    background: #1c4b82;
 }
+
 .btn:hover a {
-  color: #ececec;
+    color: #ececec;
 }
 
 .text {
-  stroke-width: 20px;
-  stroke: #ececec;
-  stroke-width: 20px;
-  fill: #1c4b82;
-  stroke-dasharray: 500;
-  stroke-dashoffset: 0;
-  animation: fill 3s ease-in-out both;
+    font-size: 500px;
+    stroke-width: 20px;
+    stroke: #ececec;
+    stroke-width: 20px;
+    fill: #1c4b82;
+    stroke-dasharray: 500;
+    stroke-dashoffset: 0;
+    animation: fill 3s ease-in-out both;
 }
 
 nav {
-  display: flex;
-  justify-content: center;
-  box-sizing: border-box;
-  padding: 0;
-  justify-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
 nav ul {
-  display: flex;
-  list-style: none;
+    display: flex;
+    list-style: none;
+    padding: 0;
 }
+
 nav ul svg {
-  width: 1rem;
-  fill: #1c4b82;
+    width: 1rem;
+    fill: #1c4b82;
 }
+
 nav ul li {
-  padding-right: 0.5rem;
+    padding-right: 0.5rem;
 }
+
 nav ul li.icon {
-  margin-left: auto;
-  font-size: calc(.5rem + .325vw);
+    margin-left: auto;
+    font-size: calc(.5rem + .325vw);
 }
 
 .modal {
-  display: none;
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  z-index: 1;
-  width: 100%;
-  height: 100%;
-  background: #1c4b82;
-  overflow: auto;
-  color: white;
-  animation: scale 0.8s ease-in-out;
+    display: none;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    background: #1c4b82;
+    overflow: auto;
+    color: white;
+    animation: scale 0.8s ease-in-out;
 }
+
 .modal .close {
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 50px;
-  height: 50px;
-  cursor: pointer;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
 }
+
 .modal .close:before {
-  position: absolute;
-  top: 5px;
-  left: 22px;
-  content: "";
-  width: 3px;
-  height: 40px;
-  background: white;
-  transform: rotate(45deg);
-  transition: all 0.4s;
+    position: absolute;
+    top: 5px;
+    left: 22px;
+    content: "";
+    width: 3px;
+    height: 40px;
+    background: white;
+    transform: rotate(45deg);
+    transition: all 0.4s;
 }
+
 .modal .close:after {
-  position: absolute;
-  top: 5px;
-  left: 22px;
-  content: "";
-  width: 3px;
-  height: 40px;
-  background: white;
-  transform: rotate(-45deg);
-  transition: all 0.4s;
+    position: absolute;
+    top: 5px;
+    left: 22px;
+    content: "";
+    width: 3px;
+    height: 40px;
+    background: white;
+    transform: rotate(-45deg);
+    transition: all 0.4s;
 }
+
 .modal .close:hover:after {
-  transform: rotate(45deg);
-  background: red;
+    transform: rotate(45deg);
+    background: red;
 }
+
 .modal .close:hover:before {
-  transform: rotate(-45deg);
-  background: red;
+    transform: rotate(-45deg);
+    background: red;
 }
 
 .intro {
-  margin: 5rem 3rem;
-  font-size: 40px;
+    margin: 5rem 3rem;
+    font-size: 40px;
 }
 
 @keyframes scale {
-  from {
-    transform: scale(0);
-    opacity: 0;
-  }
-  to {
-    transform: scale(1);
-    opacity: 1;
-  }
+    from {
+        transform: scale(0);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
 }
+
 @keyframes fill {
-  from {
-    stroke-dashoffset: 0;
-  }
-  to {
-    stroke-dashoffset: 500;
-  }
+    from {
+        stroke-dashoffset: 0;
+    }
+    to {
+        stroke-dashoffset: 500;
+    }
 }
