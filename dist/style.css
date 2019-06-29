@@ -1,9 +1,13 @@
 @import url("https://fonts.googleapis.com/css?family=Lobster|Rubik&display=swap");
+* {
+    font-size: 20px;
+}
+
 body {
     background: #ececec;
     color: #1c4b82;
     font-family: "Rubik", sans-serifs;
-    font-size: calc(.8rem + .325vw);
+    font-size: calc(1rem + .325vw);
     margin: 0;
     padding: 0;
     text-align: center;
