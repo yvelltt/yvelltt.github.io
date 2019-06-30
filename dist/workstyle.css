@@ -34,6 +34,7 @@ header {
     padding-top: 25px;
     z-index: 2;
     background-color: white;
+    font-size: 2rem;
 }
 
 header .logo {
@@ -119,10 +120,8 @@ header #breadcrumbs #sort:hover .dropdown {
 
 .container>ul {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
     grid-gap: 2rem;
-    justify-content: center;
-    align-items: center;
     padding: 0;
 }
 
@@ -135,7 +134,7 @@ header #breadcrumbs #sort:hover .dropdown {
 
 .container>ul>li>img {
     position: relative;
-    max-height: 400px;
+    max-height: 500px;
     border-top-left-radius: .5rem;
     border-top-right-radius: .5rem;
     overflow: hidden;
